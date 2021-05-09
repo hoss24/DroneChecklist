@@ -3,27 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9100133426386A2200350A3E /* CategoryDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100133326386A2200350A3E /* CategoryDefault.swift */; };
+		91003EC92629607100B48429 /* defaultData.realm in Resources */ = {isa = PBXBuildFile; fileRef = 91003EC82629601B00B48429 /* defaultData.realm */; };
 		91073DB52603C6100096986C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DB42603C6100096986C /* AppDelegate.swift */; };
 		91073DB72603C6100096986C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DB62603C6100096986C /* SceneDelegate.swift */; };
-		91073DB92603C6100096986C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DB82603C6100096986C /* ViewController.swift */; };
+		91073DB92603C6100096986C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DB82603C6100096986C /* HomeViewController.swift */; };
 		91073DBC2603C6100096986C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91073DBA2603C6100096986C /* Main.storyboard */; };
 		91073DBE2603C6140096986C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91073DBD2603C6140096986C /* Assets.xcassets */; };
 		91073DC12603C6140096986C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91073DBF2603C6140096986C /* LaunchScreen.storyboard */; };
+		91073DD8260500710096986C /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DD7260500710096986C /* ChecklistViewController.swift */; };
+		91073DDB260502320096986C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DDA260502320096986C /* CategoryViewController.swift */; };
+		91073DDE260506F10096986C /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DDD260506F10096986C /* InstructionViewController.swift */; };
+		91073DE12605072B0096986C /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DE02605072B0096986C /* ExportViewController.swift */; };
+		91073DE92605973E0096986C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 91073DE82605973E0096986C /* Realm */; };
+		91073DEB2605973E0096986C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91073DEA2605973E0096986C /* RealmSwift */; };
+		91073DEE260597740096986C /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91073DED260597740096986C /* SwipeTableViewController.swift */; };
+		916B6AFB261546BF00C997BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B6AFA261546BF00C997BC /* Extensions.swift */; };
+		916B6B022616090100C997BC /* CategoryArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B6B012616090100C997BC /* CategoryArchive.swift */; };
+		916B6B06261610A800C997BC /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B6B05261610A700C997BC /* Archive.swift */; };
+		916B6B0D2616E6FF00C997BC /* AddArchiveInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B6B0C2616E6FF00C997BC /* AddArchiveInfoViewController.swift */; };
+		916B6B162617666E00C997BC /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 916B6B152617666E00C997BC /* Eureka */; };
+		916B6B192617AF2100C997BC /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B6B182617AF2000C997BC /* CustomCells.swift */; };
+		916B6B22261F478D00C997BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B6B21261F478C00C997BC /* Constants.swift */; };
+		9198A40326064D650023E02C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9198A40226064D640023E02C /* Category.swift */; };
+		9198A40626064EC00023E02C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9198A40526064EC00023E02C /* Item.swift */; };
+		91A228F0260B99DA0013462F /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A228EF260B99DA0013462F /* AddEditViewController.swift */; };
+		91D596872623725D00C42449 /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D596862623725D00C42449 /* Export.swift */; };
+		91D59690262557E700C42449 /* ShowArchiveInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5968F262557E700C42449 /* ShowArchiveInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9100133326386A2200350A3E /* CategoryDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDefault.swift; sourceTree = "<group>"; };
+		91003EC82629601B00B48429 /* defaultData.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = defaultData.realm; sourceTree = "<group>"; };
 		91073DB12603C6100096986C /* Drone Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drone Checklist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91073DB42603C6100096986C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91073DB62603C6100096986C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		91073DB82603C6100096986C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91073DB82603C6100096986C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		91073DBB2603C6100096986C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91073DBD2603C6140096986C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91073DC02603C6140096986C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91073DC22603C6140096986C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91073DD7260500710096986C /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
+		91073DDA260502320096986C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		91073DDD260506F10096986C /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		91073DE02605072B0096986C /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		91073DED260597740096986C /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		916B6AFA261546BF00C997BC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		916B6B012616090100C997BC /* CategoryArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryArchive.swift; sourceTree = "<group>"; };
+		916B6B05261610A700C997BC /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		916B6B0C2616E6FF00C997BC /* AddArchiveInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArchiveInfoViewController.swift; sourceTree = "<group>"; };
+		916B6B182617AF2000C997BC /* CustomCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
+		916B6B21261F478C00C997BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9198A40226064D640023E02C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9198A40526064EC00023E02C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		91A228EF260B99DA0013462F /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		91D596862623725D00C42449 /* Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Export.swift; sourceTree = "<group>"; };
+		91D5968F262557E700C42449 /* ShowArchiveInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowArchiveInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91073DEB2605973E0096986C /* RealmSwift in Frameworks */,
+				91073DE92605973E0096986C /* Realm in Frameworks */,
+				916B6B162617666E00C997BC /* Eureka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +98,57 @@
 		91073DB32603C6100096986C /* Drone Checklist */ = {
 			isa = PBXGroup;
 			children = (
+				91073DCD2604FF310096986C /* Models */,
+				91073DCE2604FF370096986C /* Views */,
+				91073DCC2604FF200096986C /* Controllers */,
 				91073DB42603C6100096986C /* AppDelegate.swift */,
 				91073DB62603C6100096986C /* SceneDelegate.swift */,
-				91073DB82603C6100096986C /* ViewController.swift */,
-				91073DBA2603C6100096986C /* Main.storyboard */,
 				91073DBD2603C6140096986C /* Assets.xcassets */,
 				91073DBF2603C6140096986C /* LaunchScreen.storyboard */,
+				916B6B182617AF2000C997BC /* CustomCells.swift */,
 				91073DC22603C6140096986C /* Info.plist */,
+				916B6B21261F478C00C997BC /* Constants.swift */,
+				91003EC82629601B00B48429 /* defaultData.realm */,
 			);
 			path = "Drone Checklist";
+			sourceTree = "<group>";
+		};
+		91073DCC2604FF200096986C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91073DB82603C6100096986C /* HomeViewController.swift */,
+				91073DDA260502320096986C /* CategoryViewController.swift */,
+				91073DE02605072B0096986C /* ExportViewController.swift */,
+				91073DD7260500710096986C /* ChecklistViewController.swift */,
+				91A228EF260B99DA0013462F /* AddEditViewController.swift */,
+				916B6B0C2616E6FF00C997BC /* AddArchiveInfoViewController.swift */,
+				91D5968F262557E700C42449 /* ShowArchiveInfoViewController.swift */,
+				91073DDD260506F10096986C /* InstructionViewController.swift */,
+				91073DED260597740096986C /* SwipeTableViewController.swift */,
+				916B6AFA261546BF00C997BC /* Extensions.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91073DCD2604FF310096986C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9198A40226064D640023E02C /* Category.swift */,
+				9100133326386A2200350A3E /* CategoryDefault.swift */,
+				9198A40526064EC00023E02C /* Item.swift */,
+				916B6B05261610A700C997BC /* Archive.swift */,
+				916B6B012616090100C997BC /* CategoryArchive.swift */,
+				91D596862623725D00C42449 /* Export.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		91073DCE2604FF370096986C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91073DBA2603C6100096986C /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +167,11 @@
 			dependencies = (
 			);
 			name = "Drone Checklist";
+			packageProductDependencies = (
+				91073DE82605973E0096986C /* Realm */,
+				91073DEA2605973E0096986C /* RealmSwift */,
+				916B6B152617666E00C997BC /* Eureka */,
+			);
 			productName = "Drone Checklist";
 			productReference = 91073DB12603C6100096986C /* Drone Checklist.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +199,11 @@
 				Base,
 			);
 			mainGroup = 91073DA82603C6100096986C;
+			packageReferences = (
+				91073DE3260595600096986C /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+				91073DE72605973E0096986C /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				916B6B142617666D00C997BC /* XCRemoteSwiftPackageReference "Eureka" */,
+			);
 			productRefGroup = 91073DB22603C6100096986C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91003EC92629607100B48429 /* defaultData.realm in Resources */,
 				91073DC12603C6140096986C /* LaunchScreen.storyboard in Resources */,
 				91073DBE2603C6140096986C /* Assets.xcassets in Resources */,
 				91073DBC2603C6100096986C /* Main.storyboard in Resources */,
@@ -137,7 +232,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91073DB92603C6100096986C /* ViewController.swift in Sources */,
+				9198A40626064EC00023E02C /* Item.swift in Sources */,
+				916B6B22261F478D00C997BC /* Constants.swift in Sources */,
+				916B6AFB261546BF00C997BC /* Extensions.swift in Sources */,
+				9100133426386A2200350A3E /* CategoryDefault.swift in Sources */,
+				91073DEE260597740096986C /* SwipeTableViewController.swift in Sources */,
+				91D59690262557E700C42449 /* ShowArchiveInfoViewController.swift in Sources */,
+				91073DDB260502320096986C /* CategoryViewController.swift in Sources */,
+				91073DB92603C6100096986C /* HomeViewController.swift in Sources */,
+				916B6B022616090100C997BC /* CategoryArchive.swift in Sources */,
+				91073DD8260500710096986C /* ChecklistViewController.swift in Sources */,
+				916B6B0D2616E6FF00C997BC /* AddArchiveInfoViewController.swift in Sources */,
+				91073DDE260506F10096986C /* InstructionViewController.swift in Sources */,
+				916B6B06261610A800C997BC /* Archive.swift in Sources */,
+				91D596872623725D00C42449 /* Export.swift in Sources */,
+				916B6B192617AF2100C997BC /* CustomCells.swift in Sources */,
+				9198A40326064D650023E02C /* Category.swift in Sources */,
+				91073DE12605072B0096986C /* ExportViewController.swift in Sources */,
+				91A228F0260B99DA0013462F /* AddEditViewController.swift in Sources */,
 				91073DB52603C6100096986C /* AppDelegate.swift in Sources */,
 				91073DB72603C6100096986C /* SceneDelegate.swift in Sources */,
 			);
@@ -287,13 +399,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = N6WU2Q99MM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Drone Checklist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ghosticka.Drone-Checklist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.granthosticka.DroneChecklist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,13 +425,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = N6WU2Q99MM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Drone Checklist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ghosticka.Drone-Checklist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.granthosticka.DroneChecklist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,6 +467,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91073DE3260595600096986C /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		91073DE72605973E0096986C /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.7.2;
+			};
+		};
+		916B6B142617666D00C997BC /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91073DE82605973E0096986C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91073DE72605973E0096986C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		91073DEA2605973E0096986C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91073DE72605973E0096986C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		916B6B152617666E00C997BC /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916B6B142617666D00C997BC /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91073DA92603C6100096986C /* Project object */;
 }

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cr8-Ac-c4U">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Drone_Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mOY-Xc-1dP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Xzt-bZ-xMa">
+                                <rect key="frame" x="20" y="88" width="374" height="724"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTp-zf-Rym" userLabel="View for Image">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="164"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="144" translatesAutoresizingMaskIntoConstraints="NO" id="R6X-cY-TGh" userLabel="Logo">
+                                                <rect key="frame" x="115" y="20" width="144" height="144"/>
+                                                <accessibility key="accessibilityConfiguration" label="Drone Checklist Logo">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="164" id="8IQ-NE-bCu"/>
+                                            <constraint firstItem="R6X-cY-TGh" firstAttribute="top" secondItem="QTp-zf-Rym" secondAttribute="top" constant="20" id="ZFt-7j-HZG"/>
+                                            <constraint firstItem="R6X-cY-TGh" firstAttribute="centerX" secondItem="QTp-zf-Rym" secondAttribute="centerX" id="i8X-ui-PxA"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fqg-U2-bTt">
+                                        <rect key="frame" x="0.0" y="194" width="374" height="215"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="qaL-2n-cJ5">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="97.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Hours Logged: 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCS-ta-VFa" userLabel="flightTimeLabel">
+                                                        <rect key="frame" x="0.0" y="71" width="374" height="26.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="iZ4-OY-Kbm">
+                                                <rect key="frame" x="0.0" y="117.5" width="374" height="97.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Checklists Archived: 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exn-LM-1Zr" userLabel="checklistLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgX-BG-P5m">
+                                        <rect key="frame" x="0.0" y="439" width="374" height="75"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Checklists"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="KnP-wo-MNm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="Checklists">
+                                            <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fr0-3U-42V" kind="show" animates="NO" id="TMJ-U5-96U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzL-sc-sFu">
+                                        <rect key="frame" x="0.0" y="544" width="374" height="75"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Archived Data"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="eMf-no-kkE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="Archived Data">
+                                            <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="gFf-T1-2Ta" kind="show" id="bLB-CX-ki7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-YI-vUT">
+                                        <rect key="frame" x="0.0" y="649" width="374" height="75"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="User Guide"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="adj-xB-Hh7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="User Guide">
+                                            <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="gqy-TR-NAV" kind="show" id="fJx-IU-G10"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fqg-U2-bTt" firstAttribute="top" secondItem="QTp-zf-Rym" secondAttribute="bottom" constant="30" id="bGe-E5-P3e"/>
+                                    <constraint firstItem="QTp-zf-Rym" firstAttribute="leading" secondItem="Xzt-bZ-xMa" secondAttribute="leading" id="c0O-zk-Lih"/>
+                                    <constraint firstItem="QTp-zf-Rym" firstAttribute="top" secondItem="Xzt-bZ-xMa" secondAttribute="top" id="eaS-Ko-wJt"/>
+                                    <constraint firstAttribute="trailing" secondItem="QTp-zf-Rym" secondAttribute="trailing" id="mNC-xM-5qV"/>
+                                    <constraint firstItem="QTp-zf-Rym" firstAttribute="top" secondItem="Xzt-bZ-xMa" secondAttribute="top" id="nOv-3Z-0im"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gEZ-qt-E7c"/>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xzt-bZ-xMa" firstAttribute="top" secondItem="gEZ-qt-E7c" secondAttribute="top" id="Bgs-oj-3DC"/>
+                            <constraint firstItem="Xzt-bZ-xMa" firstAttribute="trailing" secondItem="gEZ-qt-E7c" secondAttribute="trailing" constant="-20" id="EV4-a6-meg"/>
+                            <constraint firstItem="Xzt-bZ-xMa" firstAttribute="leading" secondItem="gEZ-qt-E7c" secondAttribute="leading" constant="20" id="cHm-BD-7r9"/>
+                            <constraint firstItem="gEZ-qt-E7c" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Xzt-bZ-xMa" secondAttribute="bottom" constant="50" id="mrR-Ln-TWt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1c9-Kw-Pu5"/>
+                    <connections>
+                        <outlet property="checklistLabel" destination="exn-LM-1Zr" id="Uar-QH-kLe"/>
+                        <outlet property="checklistsButton" destination="BgX-BG-P5m" id="S09-3J-n1f"/>
+                        <outlet property="exportButton" destination="vzL-sc-sFu" id="fqZ-aY-wPm"/>
+                        <outlet property="flightTimeLabel" destination="kCS-ta-VFa" id="Tgg-am-Cjs"/>
+                        <outlet property="guideButton" destination="fhL-YI-vUT" id="MVc-3a-fca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="355.7721139430285"/>
+        </scene>
+        <!--Export View Controller-->
+        <scene sceneID="6RW-9X-jSM">
+            <objects>
+                <tableViewController id="gFf-T1-2Ta" customClass="ExportViewController" customModule="Drone_Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Yp-Ua-1fN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Llm-nf-fZp" detailTextLabel="5B2-Lz-4ev" style="IBUITableViewCellStyleSubtitle" id="T2S-Ni-0rQ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T2S-Ni-0rQ" id="S7n-pT-ldC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Llm-nf-fZp">
+                                            <rect key="frame" x="20" y="8" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="5B2-Lz-4ev">
+                                            <rect key="frame" x="20" y="31.5" width="53" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gFf-T1-2Ta" id="MeP-Jt-Rln"/>
+                            <outlet property="delegate" destination="gFf-T1-2Ta" id="GCB-Mb-TfX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qNb-V3-3us"/>
+                    <connections>
+                        <segue destination="T4H-t8-gWB" kind="show" identifier="addArchivetoShowArchive" id="pov-Yo-Qyy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtk-uS-BQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="538"/>
+        </scene>
+        <!--Show Archive Info View Controller-->
+        <scene sceneID="QkN-93-tC9">
+            <objects>
+                <viewController id="T4H-t8-gWB" customClass="ShowArchiveInfoViewController" customModule="Drone_Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="84K-0r-WcI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SxL-Sw-4yV">
+                                <rect key="frame" x="5" y="93" width="404" height="764"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x79-sc-dAF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SxL-Sw-4yV" firstAttribute="leading" secondItem="x79-sc-dAF" secondAttribute="leading" constant="5" id="1Hq-Ya-rMo"/>
+                            <constraint firstItem="SxL-Sw-4yV" firstAttribute="top" secondItem="x79-sc-dAF" secondAttribute="top" constant="5" id="EXj-Xj-z2C"/>
+                            <constraint firstItem="x79-sc-dAF" firstAttribute="trailing" secondItem="SxL-Sw-4yV" secondAttribute="trailing" constant="5" id="U1Y-XU-Sij"/>
+                            <constraint firstItem="x79-sc-dAF" firstAttribute="bottom" secondItem="SxL-Sw-4yV" secondAttribute="bottom" constant="5" id="bsd-Hm-ANr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VlI-Ov-OWP"/>
+                    <connections>
+                        <outlet property="infoTextView" destination="SxL-Sw-4yV" id="jBW-mE-7Nu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dnh-Vb-lcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2676.5625" y="557.8125"/>
+        </scene>
+        <!--Add Edit View Controller-->
+        <scene sceneID="IXl-rX-qkv">
+            <objects>
+                <viewController storyboardIdentifier="AddEditView" id="RKM-qT-f81" customClass="AddEditViewController" customModule="Drone_Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vg2-hU-rKp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6P-3s-BCi">
+                                <rect key="frame" x="50" y="138" width="314" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ugn-d7-jyE"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xp2-2q-sUX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l6P-3s-BCi" firstAttribute="leading" secondItem="Xp2-2q-sUX" secondAttribute="leading" constant="50" id="9tX-3j-HLk"/>
+                            <constraint firstItem="l6P-3s-BCi" firstAttribute="top" secondItem="Xp2-2q-sUX" secondAttribute="top" constant="50" id="Ar9-uO-3U8"/>
+                            <constraint firstItem="Xp2-2q-sUX" firstAttribute="trailing" secondItem="l6P-3s-BCi" secondAttribute="trailing" constant="50" id="wnr-Hp-EuS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fIL-VT-pxK"/>
+                    <connections>
+                        <outlet property="textView" destination="l6P-3s-BCi" id="qxb-yV-dQf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZt-Qg-s9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3482.608695652174" y="197.54464285714286"/>
+        </scene>
+        <!--Instruction View Controller-->
+        <scene sceneID="0vY-BE-NzD">
+            <objects>
+                <viewController id="gqy-TR-NAV" customClass="InstructionViewController" customModule="Drone_Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AO2-af-baK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93k-pG-JVL">
+                                <rect key="frame" x="10" y="88" width="394" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rfZ-vY-06Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="93k-pG-JVL" firstAttribute="top" secondItem="rfZ-vY-06Q" secondAttribute="top" id="HvK-Qn-qOI"/>
+                            <constraint firstAttribute="bottom" secondItem="93k-pG-JVL" secondAttribute="bottom" id="M3P-bn-gja"/>
+                            <constraint firstItem="rfZ-vY-06Q" firstAttribute="trailing" secondItem="93k-pG-JVL" secondAttribute="trailing" constant="10" id="QK5-Oz-yrJ"/>
+                            <constraint firstItem="93k-pG-JVL" firstAttribute="leading" secondItem="rfZ-vY-06Q" secondAttribute="leading" constant="10" id="sOW-W7-jIP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="88I-LU-VoU"/>
+                    <connections>
+                        <outlet property="textView" destination="93k-pG-JVL" id="oJs-Vm-BTD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0I-pz-ivo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="1187"/>
+        </scene>
+        <!--Add Archive Info View Controller-->
+        <scene sceneID="YB1-U8-ax6">
+            <objects>
+                <viewController id="ZIK-qy-6en" customClass="AddArchiveInfoViewController" customModule="Drone_Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9bc-uh-HgP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Q8D-x1-qEC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d5Q-Di-anD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l55-5S-gdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2256" y="-813"/>
+        </scene>
+        <!--Category View Controller-->
+        <scene sceneID="dpx-6u-AFg">
+            <objects>
+                <tableViewController storyboardIdentifier="CategoryView" id="fr0-3U-42V" customClass="CategoryViewController" customModule="Drone_Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xhG-ji-Ghr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="op0-8d-wLp">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="op0-8d-wLp" id="lkD-Nq-HMf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fr0-3U-42V" id="we3-EG-W4h"/>
+                            <outlet property="delegate" destination="fr0-3U-42V" id="WHn-mO-bjQ"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ne4-WU-ynm"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Ter-7u-PO7" kind="show" identifier="goToItems" id="eU8-di-ACL"/>
+                        <segue destination="RKM-qT-f81" kind="show" identifier="categoryToAddEdit" id="kzP-dG-Tep"/>
+                        <segue destination="ZIK-qy-6en" kind="show" identifier="categoryToAddArchiveInfo" id="Xs3-ng-oyU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgA-IJ-XCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836.2318840579712" y="-108.48214285714285"/>
+        </scene>
+        <!--Checklist View Controller-->
+        <scene sceneID="iIQ-HR-MtL">
+            <objects>
+                <tableViewController id="Ter-7u-PO7" customClass="ChecklistViewController" customModule="Drone_Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0yW-jV-ZzQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="0lA-wx-Bt9">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0lA-wx-Bt9" id="IKR-bv-gCx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ter-7u-PO7" id="yrR-6O-7Ap"/>
+                            <outlet property="delegate" destination="Ter-7u-PO7" id="jje-dF-RLB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MO3-3m-AxX"/>
+                    <connections>
+                        <segue destination="RKM-qT-f81" kind="show" identifier="checklistToAddEdit" id="f5g-1R-We8"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="041-Io-72c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2693" y="-108"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5S7-0w-7Pi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cr8-Ac-c4U" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TRp-Z7-EYt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="s9Q-N9-ifs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHf-t2-uW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1177" y="356"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kzP-dG-Tep"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="144" width="144" height="144"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

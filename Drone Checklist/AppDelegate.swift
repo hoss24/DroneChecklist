@@ -6,15 +6,49 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    //happens before view did load
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        //location of Realm file
+        //command shift G in finder to copy and paste path "/Users/....."
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+
+        //Realm is like a container, check initally and then can force unwrap later on
+        /*do {
+            _ = try Realm()
+        } catch {
+            print("Error initializing new Realm, \(error)") //catch to see if any errors when initalizing a new realm
+        }*/
+        
+        openRealm()
+        
         return true
+    }
+    
+    func openRealm() {
+        let bundlePath = Bundle.main.path(forResource: "defaultData", ofType: "realm")!
+        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL!.path
+        let fileManager = FileManager.default
+
+        // Only need to copy the prepopulated `.realm` file if it doesn't exist yet
+        if !fileManager.fileExists(atPath: defaultPath){
+            print("use pre-populated database")
+            do {
+                try fileManager.copyItem(atPath: bundlePath, toPath: defaultPath)
+                print("Copied")
+            } catch {
+                print("error copying: \(error)")
+            }
+        }
+
     }
 
     // MARK: UISceneSession Lifecycle
