@@ -356,16 +356,20 @@ class CategoryViewController: SwipeTableViewController, AddEditViewControllerDel
     func showAlert(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
-            // Code in this block will trigger when OK button is tapped.
+        }
+        let ResetAction = UIAlertAction(title: "Reset", style: .destructive) { (action:UIAlertAction!) in
             if title == "Reset Checklists"{
                 self.resetTapped(confirmed: true)
             }
         }
-        let CancelAction = UIAlertAction(title: "Cancel", style: .default) { (action:UIAlertAction!) in
+        let CancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action:UIAlertAction!) in
         }
-        alertController.addAction(OKAction)
+        
         if title == "Reset Checklists"{
+            alertController.addAction(ResetAction)
             alertController.addAction(CancelAction)
+        }else{
+            alertController.addAction(OKAction)
         }
         self.present(alertController, animated: true, completion:nil)
     }
