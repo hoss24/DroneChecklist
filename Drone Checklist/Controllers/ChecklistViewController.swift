@@ -125,7 +125,9 @@ class ChecklistViewController: SwipeTableViewController, AddEditViewControllerDe
             }
         }
         //reload to take into account new item in array
-        self.tableView.reloadData()
+        //insert row instead of reloading all tableview data
+        let indexPath = IndexPath(row: ((checklistItems?.count ?? 1) - 1), section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
     }
     
     //MARK: - Move Data Order

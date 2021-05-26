@@ -213,7 +213,9 @@ class CategoryViewController: SwipeTableViewController, AddEditViewControllerDel
             print("Error saving context: \(error)")
         }
         //reload to take into account new item in array
-        tableView.reloadData()
+        //insert row instead of reloading all tableview data
+        let indexPath = IndexPath(row: ((categories?.count ?? 1) - 1), section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
     }
     
     //MARK: - Move Data Order

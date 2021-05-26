@@ -15,10 +15,21 @@ class InstructionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isToolbarHidden = true
-        navigationItem.title = "User Guide"
+        navigationItem.title = "Drone Checklist"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareApp))
         textView.isEditable = false
         textView.isSelectable = false
         addUITextView()
+    }
+    
+    @objc func shareApp(){
+        let url = URL(string: "https://apps.apple.com/us/app/drone-checklist-for-uas-uav/id1563866102")!
+        //share content with other apps and services
+        //pass in array of items to share and any of app's services to include in list
+        let vc = UIActivityViewController(activityItems: [url], applicationActivities: [])
+        //where the activity view controller should be anchored (where it should appear from)
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
     
     func addUITextView(){
