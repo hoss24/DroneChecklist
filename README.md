@@ -12,9 +12,16 @@ Open source code for an app on the App Store called Drone Checklist. An app for 
 
 <img src="Screenshots/1.jpg" width="225"> <img src="Screenshots/2.jpg" width="225"> <img src="Screenshots/3.jpg" width="225"> <img src="Screenshots/4.jpg" width="225">
 
+**Key Code Implementations:**
+- Storage or data with Local Database Realm
+- Table Views (edit, add, remove data)
+- Activity View Controller (export data to .csv)
+- Design across iPhone and iPad
+- Implementation of 3rd Party libraries
+
 **Links:**
 
-Drone Checklist in the App Store: Coming Soon
+Drone Checklist in the App Store: (https://apps.apple.com/gb/app/drone-checklist-for-uas-uav/id1563866102)
 
 [3rd party library Eureka for form design](https://github.com/xmartlabs/Eureka)
 
